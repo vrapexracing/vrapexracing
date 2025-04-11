@@ -1,0 +1,164 @@
+/*Variables*/
+:root {
+  --main-color: #03509e;
+  --secondary-color: #fff;
+  --font-family: Arial, sans-serif;
+  --text-font-family: calibri;
+  --header-font-size: 2.5vw;
+  --header-font-size-small: 5vw;
+  --text-font-size: 1.5vw;
+  --text-font-size-small: 3vw;
+}
+
+#navbar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  overflow: hidden;
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding-top: 1%;
+  border: 15px solid var(--main-color);
+}
+
+/* Vertical navigation bar styles */
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: block;
+  color: var(--secondary-color);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bolder;
+  padding: 10% 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.3vw;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Adds a hover effect */
+  cursor: pointer;
+}
+
+.selectedNav {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10% 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.3vw;
+  text-decoration: none;
+}
+
+#game {
+  color: yellow;
+}
+
+#mainBody {
+  float: right;
+  width: 77%;
+  background-color: none;
+  height: auto;
+}
+
+#logo {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.half {
+  width: 50%;
+  height: auto;
+  float: left;
+  background-color: none;
+  padding: 0px;
+}
+
+.halfVertical {
+  height: 50%;
+  float: left;
+  background-color: lightgreen;
+}
+
+.standardImage {
+  width: 94%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  height: 100%;
+}
+
+/*Text*/
+h2 {
+  font-size: var(--header-font-size);
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: var(--font-family);
+  padding: none;
+  padding: 13px 0px;
+  background-color: var(--main-color);
+  margin: 0px;
+  width: 94%;
+  margin-left: 5%;
+}
+
+p {
+  font-size: var(--text-font-size);
+  color: black;
+  text-align: left;
+  font-family: var(--text-font-family);
+  padding: none;
+  margin: 10px 0px;
+  width: 94%;
+  margin-left: 5%;
+}
+
+/* Existing styles... */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  #navbar {
+    width: 100%; /* Make the navbar horizontal */
+    height: auto;
+    position: relative;
+    border: none;
+    padding-top: 0%;
+  }
+
+  .nav {
+    font-size: 5vw; /* Increase font size for better readability */
+    padding: 5% 0; /* Adjust padding */
+  }
+
+  .selectedNav {
+    font-size: 5vw;
+    padding: 5% 0;
+  }
+
+  #mainBody {
+    width: 100%; /* Take full width */
+    float: none;
+    background-color: lightgray; /* Optional: Change background color */
+  }
+
+  #logo {
+    height: auto; /* Adjust logo height */
+    margin-bottom: 20px;
+  }
+}
