@@ -5,9 +5,9 @@
   --font-family: Arial, sans-serif;
   --text-font-family: calibri;
   --header-font-size: 2.5vw;
-  --header-font-size-small: 5vw;
+  --header-font-size-small: 7.5vw;
   --text-font-size: 1.5vw;
-  --text-font-size-small: 3vw;
+  --text-font-size-small: 4vw;
 }
 
 #navbar {
@@ -36,7 +36,7 @@ a {
   text-decoration: none;
   text-align: center;
   font-weight: bolder;
-  padding: 10% 0;
+  padding: 8.5% 0;
   width: 100%;
   box-sizing: border-box;
   font-size: 1.3vw;
@@ -56,7 +56,7 @@ a {
   display: block;
   text-decoration: none;
   text-align: center;
-  padding: 10% 0;
+  padding: 8.5% 0;
   width: 100%;
   box-sizing: border-box;
   font-size: 1.3vw;
@@ -115,6 +115,7 @@ h2 {
   background-color: var(--main-color);
   margin: 0px;
   width: 94%;
+  margin-bottom: 20px;
   margin-left: 5%;
 }
 
@@ -139,6 +140,7 @@ p {
     position: relative;
     border: none;
     padding-top: 0%;
+    margin-bottom: 5%;
   }
 
   .nav {
@@ -160,5 +162,48 @@ p {
   #logo {
     height: auto; /* Adjust logo height */
     margin-bottom: 20px;
+  }
+
+  /*Text*/
+  h2 {
+    font-size: var(--header-font-size-small);
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--font-family);
+    padding: none;
+    padding: 13px 0px;
+    background-color: var(--main-color);
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  p {
+    font-size: var(--text-font-size-small);
+    color: black;
+    text-align: left;
+    font-family: var(--text-font-family);
+    padding: none;
+    margin: 10px 0px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .half {
+    height: auto;
+    width: 100%;
+    float: left;
+    background-color: none;
+  }
+
+  .standardImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 0%;
+    height: 100%;
+    margin: 30px 0px;
   }
 }
